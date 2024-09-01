@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>湖東休閒農業區</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #67ab6a; /* 替換為你的主要顏色 */
+        }
+
+        .destination-card {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid var(--primary);
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: auto;
+            max-width: 350px;
+            object-fit: cover;
+        }
+
+        .destination-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .destination-card h4 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .destination-card p {
+            color: #555;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: 'Georgia', serif;
+        }
+		
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">遊嘍西酷...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <img class="w-50" src="img/頭貼.png" alt="Image">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+               
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none d-flex justify-content-center">
+							<img class="img-fluid" style="max-width: 150px;" src="img/頭貼.png" alt="Image">
+						</a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                         </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link active">首頁</a>
+                                <a href="about.html" class="nav-item nav-link">關於我們</a>
+                                             <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">遊程</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+										<a href="遊程.html" class="dropdown-item">濁流119詩徑</a>
+                                        <a href="遊程2.html" class="dropdown-item">柚見石虎苗81</a>
+                                    </div>
+                                </div>
+                                <a href="影音.html" class="nav-item nav-link">影音</a>
+                                <a href="景點.html" class="nav-item nav-link">景點介紹</a>
+                            </div>
+                            <a href="https://forms.gle/FdrRGLiwBQSoCUFJA" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">立刻報名遊程<i class="fa fa-arrow-right ms-3"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+ 
+        <style>
+    .destination-card {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 2rem;
+    }
+
+    .destination-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .destination-card img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        border-right: 1px solid #ddd;
+    }
+
+    .destination-content {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .destination-card h4 {
+        color: var(--primary);
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+
+    .destination-card p {
+        color: #333;
+        margin-top: 10px;
+        font-size: 0.875rem; /* 縮小字體大小 */
+    }
+
+    h2 {
+        color: var(--primary);
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <h2>探索西湖的特色景點</h2>
+        <div class="row g-4">
+            <!-- 景點1 -->
+            <div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/about-4.jpg" alt="景點1圖片">
+                    <div class="destination-content">
+                        <h4>宣王宮</h4>
+                        <p>宣王宮位在苗栗西湖鄉，前身是雲梯書院。 雲梯書院建於清道光二十年(西元1840年)，至今已將近有１７０年的歷史，早期為漢學私塾，現今書院樣貌已不復見，但書院時期的孔子牌位依舊供奉於宮中。 宣王宮中最珍貴的文物就是外庭左側石雕的「惜字亭」，高度約三公尺的惜字亭共分為三層，由下至上為底座、焚燒字紙的敬聖亭以及倉頡先聖祠。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 景點2 -->
+            <div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/媽祖.jpg" alt="景點2圖片">
+                    <div class="destination-content">
+                        <h4>媽祖石雕</h4>
+                        <p>五龍宮位於西湖鄉的三湖村，而在五龍宮後龍洞溪畔的新生地上有一座面容慈祥的媽祖石雕，這座媽祖石雕是由廈門大學藝術學院的副院長李為祀所設計，高度為２６．６６公尺，基座是以１６１塊青斗石所砌成，主神則是用２９９塊花崗石組合而成，是目前東南亞最高的石雕神像。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 景點3 -->
+            <div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/劉恩寬.jpg" alt="景點3圖片">
+                    <div class="destination-content">
+                        <h4>劉恩寬古宅</h4>
+                        <p>劉恩寬古宅興建於清乾隆二十五年(西元1760年)，至今約有兩百五十年的歷史，先後共修建過三次，現今的樣貌為民國五十二年時所修建。劉恩寬古宅為彭城劉氏家族的宗祠，主祀家族中的來台開基始祖恩寬公與祖先之神位，並配祀有觀音佛祖與福德正神。古宅為傳統的三合院式建築，屋脊採用燕尾翹起式，並且覆蓋綠色的琉璃瓦，整體建築顯得相當高貴素雅。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 景點4 -->
+            <div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/吳濁流.jpg" alt="景點4圖片">
+                    <div class="destination-content">
+                        <h4>吳濁流藝文館</h4>
+                        <p>吳濁流藝文館位在五湖活動中心二樓，是為紀念台灣著名的文學家吳濁流先生所設，吳濁流先生曾於西湖鄉定居執教十五年，將西湖當作他的第二故鄉，有許多描述西湖純樸民風與自然美景的文學作品，在藝文館的珍藏本室中有收藏眾多吳濁流先生的文學著作書籍，並且會不定期舉辦文學展覽，將文學納入地方文化發展的重點之一。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 景點5 -->
+            <div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/金龍窯.jpg" alt="景點5圖片">
+                    <div class="destination-content">
+                        <h4>金龍窯</h4>
+                        <p>位在西湖鄉的金龍窯是一座傳統的窯場，現在的窯場主人已是第三代，以手工捏陶與傳統柴窯燒陶為特色，從早期製作陶缸容器到現在轉型為藝術陶品，都難不倒金龍窯中的老陶師。現在民眾不僅可以到金龍窯中參觀陶品製作過程，還增建了展場與咖啡館，讓金龍窯成為一處休閒人文空間，並且提供民眾玩陶的場所。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/黃金一路.jpg" alt="景點6圖片">
+                    <div class="destination-content">
+                        <h4>黃金一路</h4>
+                        <p>在蜿蜒的道路中，兩旁就是一片片綠油油的稻田，抬眼望去還有連綿的低矮山巒，田野間可以看見古樸的農舍點綴在其中，交織成一片舒暢清新的田園風光。
+這裡最顯眼的地標是一棵佇立於田邊的苦煉樹，很多人都會選擇在此處拍照打卡，樹下用水甕、磚窯及汲水頭堆砌了一個小行的造景。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/夫妻樹.jpg" alt="景點7圖片">
+                    <div class="destination-content">
+                        <h4>夫妻樹</h4>
+                        <p>夫妻樹是生長在西湖鄉飛龍大橋東岸河堤引道旁道路兩側的一對苦楝樹。兩棵苦楝樹隔路相望，頂端茂密枝葉交錯依偎，地方取名為「夫妻樹」，據說是西湖鄉農會第九、十屆理事長的陳庚金（日大正5年/1916～民國81年/1992）在民國48年八七水災後種植的，當時種在田邊的目的是為了防風，種了一整排。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/多多2.jpg" alt="景點8圖片">
+                    <div class="destination-content">
+                        <h4>多多龍有機農場</h4>
+                        <p>多多龍有機農場以自有土地開設農場，採有機栽培，以可愛又好記的「多多龍」為名。多多龍所栽培盛產的文旦、柑桔、水梨，生產的果實口感甜美、多汁，受到許多在地人士的讚賞，也讓來到西湖的遊客，有了更多樣的選擇。多多龍農場位於一處坡地，富有自然原野的氣息，果樹林園在主人細心照料下枝葉茂盛，歡迎來趟農場，賞柚花聞花香。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/柴燒.jpg" alt="景點8圖片">
+                    <div class="destination-content">
+                        <h4>柴燒卡帕尼</h4>
+                        <p>卡帕尼(Campagne)源自於法國鄉村麵包，以孕育酵種，柴燒烘焙為基礎，運用原始食材，重新尋找對麵包的感動，每一個麵包製作都長達48個小時，堅持傳統製程，自然帶出麵包香濃的深度韻味。 每週一、四、六開窯製作麵包，周六則提供柴燒餐飲及披薩DIY體驗活動，歡迎預約洽詢。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="col-lg-12">
+                <div class="destination-card">
+                    <img src="img/店仔街.jpg" alt="景點8圖片">
+                    <div class="destination-content">
+                        <h4>店仔街</h4>
+                        <p>店仔街為三湖村內唯一的商店街，而村內重要公共設施多集中於此，其中還有五龍宮、飛龍宮、三湖福神三座廟宇座落於此，故可得知其對三湖村村民的重要性。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
